@@ -19,7 +19,7 @@ RUN go mod verify
 
 
 # Build the binary.
-RUN CGO_ENABLED=1 go build cmd/flaggame/flaggame.go
+RUN CGO_ENABLED=0 go build cmd/flaggame/flaggame.go
 
 ############################
 # STEP 2 build a small image
